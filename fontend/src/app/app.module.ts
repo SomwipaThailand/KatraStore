@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 import { RegistatorComponent } from './registator/registator.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path: 'register', component: RegistatorComponent }
@@ -14,8 +14,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    RegistatorComponent
+    RegistatorComponent,
+    LoginComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
