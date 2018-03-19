@@ -8,6 +8,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
+  { path: '', component: LoginComponent },
   { path: 'register', component: RegistatorComponent }
 ];
 
