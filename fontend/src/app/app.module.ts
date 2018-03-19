@@ -6,17 +6,22 @@ import { AppComponent } from './app.component';
 import { RegistatorComponent } from './registator/registator.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { LoginComponent } from './login/login.component';
+import { HeaderComponent } from './header/header.component';
+import { PageAfterLoginComponent } from './page-after-login/page-after-login.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
-  { path: 'register', component: RegistatorComponent }
+  { path: 'register', component: RegistatorComponent },
+  { path: 'afterLogin', component: PageAfterLoginComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistatorComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent,
+    PageAfterLoginComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
