@@ -8,6 +8,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { PageAfterLoginComponent } from './page-after-login/page-after-login.component';
+import { IndexUserComponent } from './index-user/index-user.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
     RegistatorComponent,
     LoginComponent,
     HeaderComponent,
-    PageAfterLoginComponent
+    PageAfterLoginComponent,
+    IndexUserComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
